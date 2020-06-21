@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Przelicznik</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+<section class="row">
+    <div class="col"></div>
+    <div class="col-11">
+        <form method="post" action="distanceServlet">
+            <h1 class="row font-weight-bold">Przelicznik metryczny</h1>
+            <div class="form-group row">
+                <input type="text" class="form-control mb-1" name="inputm" placeholder="metry">
+                <input type="text" class="form-control mb-1" name="inputcm" placeholder="centymetry">
+                <input type="text" class="form-control mb-1" name="inputmm" placeholder="milimetry">
+            </div>
+            <button type="submit" class="btn btn-primary row mt-2" value="Send">Przelicz</button>
+        </form>
+
+        <form method="post" action="weightServlet">
+            <h1 class="row font-weight-bold mt-5">Przelicznik wag</h1>
+            <div class="form-group row">
+                <input type="text" class="form-control mb-1" name="inputkg" placeholder="kilogramy">
+                <input type="text" class="form-control mb-1" name="inputg" placeholder="gramy">
+                <input type="text" class="form-control mb-1" name="inputmg" placeholder="miligramy">
+            </div>
+            <button type="submit" class="btn btn-primary row mt-2" value="Send">Przelicz</button>
+        </form>
+
+    </div>
+    <div class="col"></div>
+</section>
+</body>
+</html>
